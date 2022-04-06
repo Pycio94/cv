@@ -23,6 +23,7 @@ body
     background: #fff;
     display: grid;
     grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.5fr;
     box-shadow: 0 35px 55px rgba(0,0,0,0.1)
 }
 .container .left_Side
@@ -30,6 +31,7 @@ body
     position: relative;
     background: #003147;
     padding: 40px;
+    grid-row: 1;
 }
 .profileDesc
 {
@@ -221,6 +223,24 @@ p
     left: 0;
     height: 100%;
     background: #03a9f4;
+}
+.container .footer
+{
+    position: absolute;
+    background: #003147;
+    grid-row: 2;
+}
+.container .footer .desc
+{   
+    padding-right: 30px;
+    padding-left: 30px;
+}
+.container .footer .desc p
+{
+    color: #fff;
+    font-weight: 10;
+    margin: 10px;
+    font-size: 0.8em;
 }
 
 @media (max-width: 1000px)
